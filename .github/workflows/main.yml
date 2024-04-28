@@ -28,5 +28,8 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v2
             
-            - name: docker build
-              run: docker build -t github_action_demo .
+            - name: List directory contents
+              run: |
+                pwd
+                ls -la
+                

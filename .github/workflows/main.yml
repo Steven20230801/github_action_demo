@@ -24,3 +24,9 @@ jobs:
             # PRINT HELLO
             - name: Print Hello
               run: echo "Hello, world!"
+            
+            - name: Checkout code
+              uses: actions/checkout@v2
+            
+            - name: docker build
+              run: docker build -t github_action_demo .

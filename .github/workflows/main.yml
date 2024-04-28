@@ -37,3 +37,6 @@ jobs:
             - name: Build Docker image
               run: docker build -t github_action_demo .
                 
+            # 使用DOCKERFILE构建镜像跑裡面的app.py
+            - name: Run Docker image
+              run: docker run github_action_demo python app.py

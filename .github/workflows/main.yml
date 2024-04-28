@@ -32,4 +32,8 @@ jobs:
               run: |
                 pwd
                 ls -la
+            
+            # 使用DOCKERFILE构建镜像
+            - name: Build Docker image
+              run: docker build -t github_action_demo .
                 

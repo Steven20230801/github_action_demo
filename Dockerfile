@@ -19,6 +19,8 @@ RUN echo "/app" > app.pth
 
 COPY app.pth /app
 
+# 列印出目前的目錄結構
+RUN ls -al
 
 ENV PYTHONPATH "${PYTHONPATH}:/app"
 
